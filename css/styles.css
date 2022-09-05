@@ -97,7 +97,9 @@ canvas {
   align-items: center;
   justify-content: center;
 }
-
+.button__header:active{
+  color: #ff143b;
+}
 
 /* .containMain {
   display: grid;
@@ -279,7 +281,8 @@ footer {
 }
 
 .footer__content > a, .footer__link {
-  color: #5cfff3;
+  color:#000022;
+  text-decoration: none;
 }
 
 main {
@@ -296,6 +299,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
 }
 
 @keyframes bgPos {
