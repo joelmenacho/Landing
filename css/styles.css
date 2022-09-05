@@ -10,11 +10,21 @@
   src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
 /* ---- reset ---- */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   background: #0072ad;
   font: normal 75% Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 canvas {
@@ -46,7 +56,7 @@ canvas {
   font-size: 0.8em;
   text-align: left;
   text-indent: 4px;
-  line-height: 14px;
+  line-height: 10px;
   padding-bottom: 2px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -73,9 +83,9 @@ canvas {
 }
 
 /* UTILIDADES */
-img {
-  max-width: 100%;
-}
+/* img {
+  max-width: 100%; */
+
 .contenedor {
   max-width: 1100px;
   margin: 0 auto;
@@ -83,7 +93,7 @@ img {
 }
 /*MIS ESTILOS */
 
-.containerHeader {
+/* .containerHeader {
   height: 100vh;
   background: rgb(231, 10, 10);
   background: linear-gradient(90deg, #3a47d5, #0072ad 100%);
@@ -109,6 +119,7 @@ img {
   color: #fff;
   line-height: 4rem;
   text-transform: capitalize;
+  padding-top: 2rem;
 }
 
 .item p {
@@ -119,15 +130,15 @@ img {
   line-height: 1rem;
 }
 .item button{
-    width: 10rem;
-    height: 3rem;
+    width: 5rem;
+    height: 2rem;
     background: transparent;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 15px;
 }
 .item:nth-of-type(2){
     display: flex;
@@ -136,6 +147,28 @@ img {
 }
 
 /* NAVEGATION */
+.nav {
+  position: fixed;
+  background-color: #0072ad;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav a:hover {
+  color: #ff143b;
+  font-weight: bold;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.1s ease-in-out;
+}
+
 nav{
     position: absolute;
     top: 0;
@@ -183,4 +216,95 @@ nav .contenedor{
     color: #fff;
     outline: none;
     cursor: pointer ;
+} */
+img {
+  max-width: 100%;
 }
+
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+}
+
+.card-header {
+  height: 200px;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.card-title {
+  height: 20px;
+  margin: 0;
+}
+
+.card-excerpt {
+  color: #777;
+  margin: 10px 0 20px;
+}
+
+.autor {
+  display: flex;
+}
+
+.perfil-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.autor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.autor-info small {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+
