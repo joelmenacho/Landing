@@ -93,42 +93,27 @@ canvas {
 }
 /* MIS ESTILOS */
 
-/* .containerHeader {
-  height: 100vh;
+.containerHeader {
+  height: 80vh;
   background: rgb(231, 10, 10);
-  background: linear-gradient(90deg, #3a47d5, #0072ad 100%);
-  display: flex;
+  background: linear-gradient(90deg, #c6c9e4, #0072ad 100%);
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
-.containMain {
+
+
+/* .containMain {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  position: absolute;
+  position: flex;
   z-index: 1;
-}
-/* .containMain .item{  
 } */
-
-
-.item h1 {
-    font-family: "lato";
-  font-size: 2.6rem;
-  text-transform: capitalize;
-  color: #fff;
-  line-height: 4rem;
-  text-transform: capitalize;
-  padding-top: 2rem;
+/* .containMain .item{  
 }
 
-.item p {
-  font-size: 16px;
-  color: azure;
-  font-family: "lato";
-  margin: 2rem 0;
-  line-height: 1rem;
-}
+
 .item button{
     width: 5rem;
     height: 2rem;
@@ -218,7 +203,7 @@ nav .contenedor{
     cursor: pointer ;
 } */
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .card {

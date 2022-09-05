@@ -11,7 +11,7 @@ function getData() {
   header.innerHTML =
     '<img src="https://i.postimg.cc/WpSsB4rd/934-1.jpg" width="160" />'
   title.innerHTML = 'Comsitec System'
-  excerpt.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
+  excerpt.innerHTML = 'Nuestro primer proyecto en desarollo web'
   profile_img.innerHTML =
     '<img src="https://joelmenacho.github.io/HogarMenacho/img/HM_CABECERA.png" alt="" />'
   name.innerHTML = 'Joel Menacho'
