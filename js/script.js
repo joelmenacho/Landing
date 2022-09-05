@@ -15,7 +15,7 @@ function getData() {
   profile_img.innerHTML =
     '<img src="https://joelmenacho.github.io/HogarMenacho/img/HM_CABECERA.png" alt="" />'
   name.innerHTML = 'Joel Menacho'
-  date.innerHTML = 'Oct 04, 2022'
+  date.innerHTML = 'Sep 04, 2022'
 
   animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
   animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
